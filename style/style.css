@@ -166,7 +166,8 @@ main > section{
     grid-template-columns: repeat(3, 1fr);
     padding: 0px 30px;
     gap: 0px 30px;
-    text-align: left;    
+    text-align: left;
+    font-size: 20px;    
 }
 .team-image{
     width: 100%;
@@ -178,4 +179,37 @@ main > section{
     /* position: absolute; */
     bottom: 8px;
     left: 16px;
+}
+
+
+/* footer section styles */
+ .footer{
+    justify-content: space-between;
+    /* align-items: center; */
+    max-width: 1440px;
+    margin: 0 auto;
+ }
+.footer-brand{
+    font-size: 4.5rem;
+} 
+.footer-content{
+    max-width: 450px;
+} 
+.get-started{
+    font-size: 32px;
+}
+.footer-links{
+    list-style: none;
+}
+.footer-description{
+    margin-bottom: 50px;
+    font-size: 1.2rem;
+}
+.footer-links>li{
+    padding: 10px;
+}
+.copyright{
+    font-size: 20px;
+    padding: 30px;
+    text-align: center;
 }
