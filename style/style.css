@@ -77,7 +77,6 @@ main > section{
 }
 
 
-
 /* navbar styles */
 .navbar{
     justify-content: space-between;
@@ -242,7 +241,6 @@ td,th{
     object-fit: cover;
     border-radius: 18px;
 }
-
 
 
 /* footer section styles */
