@@ -115,6 +115,9 @@ main > section{
 .banner{
     justify-content: space-between;
 }
+.banner-desc{
+    line-height: 30px;
+}
 .banner-content{
     max-width: 600px;
     margin-bottom: 50px;
@@ -163,7 +166,10 @@ main > section{
     width: 100%;
     border-radius: 18px;
 }
-
+.run-desc{
+    line-height: 30px;
+    margin-bottom: 40px;
+}
 
 /* Packages style section */
 .packages{
@@ -191,7 +197,8 @@ main > section{
     margin-bottom: 30px;
 }
 .calculator{
-    max-width: 1440px;
+    border-radius: 18px;
+    max-width: 1410px;
     margin: 0 auto;
     justify-content: space-around;
 }
@@ -257,7 +264,8 @@ td,th{
 .footer-links{
     list-style: none;
 }
-.footer-description{
+.footer-desc{
+    line-height: 30px;
     margin-bottom: 50px;
     font-size: 1.2rem;
 }
@@ -296,11 +304,13 @@ td,th{
         width: 100%;
     }
     .btn-primary{
+        padding: 16px 20px;
         margin-left: 0px;
     }
     .btn-secondary{
+        padding: 16px 20px;
         margin: 20px;
-        margin-left: -0px;
+        margin-left: 10px;
     }
     .habit-cards{
         grid-template-columns: repeat(1, 1fr);
@@ -313,9 +323,7 @@ td,th{
         border-radius: 18px;
         margin: 20px;
         padding: 0px 40px;
-        /* gap: 250px; */
         background-color: rgba(255, 255, 255, 0.1);
-        /* justify-content: space-between; */
     }
     .run-image{
         width: 100%;
