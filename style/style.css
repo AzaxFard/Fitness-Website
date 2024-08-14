@@ -17,6 +17,7 @@
 }
 
 /* shared styles */
+
 .display-flex{
     display: flex;
 }
@@ -38,6 +39,9 @@
 .bg3{
     background-color: black;
 }
+body{
+    background-color: black;
+}
 .btn-primary{
     background-color: rgba(230, 83, 60, 1);
     color: white;
@@ -50,6 +54,7 @@
 .btn-secondary{
     background-color: rgba(17, 17, 17, 1);
     color: white;
+    margin-left: 20px;
     padding: 16px 47px;
     font-size: 1.20rem;
     font-weight: 500;
@@ -66,6 +71,9 @@ main > section{
 .section-title{
     font-size: 3rem;
     font-weight: 800;
+}
+.title2{
+    font-size: 1.5rem;
 }
 
 
@@ -115,6 +123,9 @@ main > section{
     font-weight: 800;
     font-size: 5rem;
 }
+.banner-image{
+    height: 100%;
+}
 
 
 /* habits section styles */
@@ -154,6 +165,53 @@ main > section{
 }
 
 
+/* Packages style section */
+.packages{
+    flex-direction: column;
+    text-align: center;
+}
+.pkg-cards{
+    margin-top: 30px;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+.pkg-card{
+    border-radius: 20px;
+    padding: 20px;
+}
+
+
+/* BMI Calculator styles */
+.calculator-content{
+    text-align: center;
+    padding-bottom: 50px;
+}
+.calc-table{
+    margin-bottom: 30px;
+}
+.calculator{
+    max-width: 1440px;
+    margin: 0 auto;
+    justify-content: space-around;
+}
+.calc-form{
+    max-width: 580px;
+    flex-direction: column;
+}
+.btn-calc{
+    margin: 20px;
+}
+table{
+    border-collapse: collapse;
+}
+td,th{
+    padding: 10px;
+    border: 1px solid rgb(255, 255, 255, .1);
+    text-align: left;
+}
+
+
 /* team section styles */
 .team{
     flex-direction: column;
@@ -164,10 +222,12 @@ main > section{
 }
 .team-cards{
     grid-template-columns: repeat(3, 1fr);
-    padding: 0px 30px;
+    padding: 30px 30px 0px;
     gap: 0px 30px;
-    text-align: left;
+    text-align: center;
     font-size: 20px;    
+    border-radius: 18px;
+    margin-bottom: 70px;
 }
 .team-image{
     width: 100%;
@@ -175,11 +235,7 @@ main > section{
     object-fit: cover;
     border-radius: 18px;
 }
-.name{
-    /* position: absolute; */
-    bottom: 8px;
-    left: 16px;
-}
+
 
 
 /* footer section styles */
@@ -212,4 +268,97 @@ main > section{
     font-size: 20px;
     padding: 30px;
     text-align: center;
+}
+.hr{
+    margin: 0px 200px;
+ }
+
+
+/* small size responsive */
+@media screen and (max-width: 576px){
+    .nav-links, .nav-item, .nav-link{
+        display: none;
+    }
+    .navbar{
+        padding: 20px;
+    }
+    .banner, .banner-content{
+        margin: 10px;
+        flex-direction: column;
+    }
+    .banner-title{
+        margin-top: 0px;
+        font-weight: 00;
+        font-size: 3.5rem;
+    }
+    .banner-image{
+        height: 100%;
+        width: 100%;
+    }
+    .btn-primary{
+        margin-left: 0px;
+    }
+    .btn-secondary{
+        margin: 20px;
+        margin-left: -0px;
+    }
+    .habit-cards{
+        grid-template-columns: repeat(1, 1fr);
+        gap: 40px;
+        margin-top: 50px;
+        text-align: center;
+    }
+    .run{
+        flex-direction: column;
+        border-radius: 18px;
+        margin: 20px;
+        padding: 0px 40px;
+        /* gap: 250px; */
+        background-color: rgba(255, 255, 255, 0.1);
+        /* justify-content: space-between; */
+    }
+    .run-image{
+        width: 100%;
+        border-radius: 18px;
+        margin-top: -200px;
+        margin-bottom: 30px;
+    }
+    .pkg-cards{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .team-cards{
+        grid-template-columns: repeat(1, 1fr);
+        padding: 30px 30px 0px;
+        gap: 0px 30px;
+        text-align: center;
+        font-size: 20px;    
+        border-radius: 18px;
+        margin: 0px 20px 70px;
+        padding-bottom: 20px;
+    }
+    .calculator{
+        padding: 20px;
+        flex-direction: column;
+        max-width: 1440px;
+        margin: 0 auto;
+        justify-content: space-around;
+    }
+    .footer{
+        padding: 0px 20px;
+        flex-direction: column;
+        max-width: 1440px;
+        margin: 0 auto;
+     }
+     .get-started{
+        flex-direction: column;
+     }
+     .copyright{
+        padding: 20px;
+     }
+     .hr{
+        margin: 0px 20px;
+     }
+     main > section{
+        margin-top: 0px;
+    }
 }

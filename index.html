@@ -21,10 +21,17 @@
             <div class="banner-content">
                 <h1 class="banner-title text">Get body in <span class="dancing-script-font">shape</span> & stay healthy</h1>
                 <p class="banner-description text-light">A huge selection of health and fitness content, healthy recipes and transformation stories to help you get fit and stay fit!</p>
-                <button class="btn-primary">Join Club Now!</button>
-                <button class="btn-secondary">Download App</button>
+                <button id="btn-1" class="btn-primary">Join Club Now!</button>
+                <button id="btn-2" class="btn-secondary">Download App</button>
             </div>
-            <img class="banner-image" src="images/images 2.png" alt="">
+            <div>
+                <img class="banner-image" src="images/images 2.png" alt="">
+                <!-- <button id="badge-btn1" class="btn-tertiary">
+                    <span id="amount">350+</span>
+                    <br>
+                    <span>Video Tutorial</span>
+                </button> -->
+            </div>
         </div>
     </header>
     <main class="bg3">
@@ -50,6 +57,104 @@
                 <img class="run-image" src="images/run.jpg" alt="">
             </div>
         </section>
+        <section class="packages display-flex">
+            <div>
+                <h3 class="text section-title">Choose Your Package</h3>
+                <p class="text-light">We believe fitness should be accessible to everyone, everywhere, regardless of income or access to a gym.</p>
+            </div>
+            <div class="pkg-cards text-light display-grid">
+                <div class="pkg-card bg">
+                    <h3 class="text title2">Monthly</h3>
+                    <p>Gym</p>
+                    <p>Classes</p>
+                    <p>24/7 Trainer Support</p>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <p class="text title2">1500 BDT</p>
+                </div>
+                <div class="pkg-card bg">
+                    <h3 class="text title2">Quarter</h3>
+                    <p>Gym</p>
+                    <p>Classes</p>
+                    <p>24/7 Trainer Support</p>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <p class="text title2">5000 BDT</p>
+                </div>
+                <div class="pkg-card bg">
+                    <h3 class="text title2">Semi-<br>Annual</h3>
+                    <p>Gym</p>
+                    <p>Classes</p>
+                    <p>24/7 Trainer Support</p>
+                    <p>Sauna(Once a month)</p>
+                    <br>
+                    <p class="text title2">7000 BDT</p>
+                </div>
+                <div class="pkg-card bg">
+                    <h3 class="text title2">Annual</h3>
+                    <p>Gym</p>
+                    <p>Classes</p>
+                    <p>24/7 Trainer Support</p>
+                    <p>Sauna(Once a week)</p>
+                    <p>Saturday Yoga classes</p>
+                    <p>Free Gym bag</p>
+                    <p class="text title2">12000 BDT</p>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="calculator-content">
+                <h3 class="section-title text">BMI Calculator</h3>
+                <p class="text-light">We believe fitness should be accessible to everyone, everywhere, regardless of income or access to a gym.</p>
+            </div>
+            <div class="calculator bg display-flex">
+                <div class="calc-table">
+                    <h4 class="text title2">BMI Calculator Chart</h4>
+                    <table class="text-light">
+                        <thead class="text">
+                            <tr>
+                                <th>BMI</th>
+                                <th>Weight Status</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Below 18.5</td>
+                                <td>Underweight</td>
+                            </tr>
+                            <tr>
+                                <td>18.5 - 24.9</td>
+                                <td>Healthy</td>
+                            </tr>
+                            <tr>
+                                <td>25.0 - 29.9</td>
+                                <td>Overweight</td>
+                            </tr>
+                            <tr>
+                                <td>30.0 -and Above</td>
+                                <td>Obese</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="calc-form display-flex">
+                    <h4 class="text title2">Calculate your BMI</h4>
+                    <p class="text-light">We believe fitness should be accessible to everyone, everywhere, regardless of income or access to a gym. </p>
+                    <form>
+                        <label for="height"><input id="height" type="number" placeholder="Height/cm"></label>
+                        <label for="age"><input id="age" type="number" placeholder="Age"></label>
+                        <label for="weight"><input id="weight" type="number" placeholder="Weight/kg"></label>
+                        <label for="height"><input id="Sex" type="text" placeholder="Sex"></label>
+                        <label for="activity factor"><input id="activity-factor" type="number" placeholder="Activity factor"></label>
+                    </form>
+                    <button class="btn-primary btn-calc">Calculate</button>
+                </div>
+            </div>
+        </section>
         <section class="team display-flex">
             <div class="team-content">
                 <h3 class="section-title text">Meet Our Team</h3>
@@ -57,34 +162,34 @@
             </div>
             <div class="team-cards display-grid bg">
                 <div>
+                    <img class="team-image" src="images/trainer1.png" alt="">
                     <h3 class="text">Jerome Bell</h3>
                     <p class="text-light">Trainer</p>
-                    <img class="team-image" src="images/trainer1.png" alt="">
                 </div>
                 <div>
+                    <img class="team-image" src="images/trainer2.png" alt="">
                     <h3 class="text">Cameron Williamson</h3>
                     <p class="text-light">Trainer</p>
-                    <img class="team-image" src="images/trainer2.png" alt="">
                 </div>
                 <div>
+                    <img class="team-image" src="images/trainer3.png" alt="">
                     <h3 class="text">Darrell Steward</h3>
                     <p class="text-light">Trainer</p>
-                    <img class="team-image" src="images/trainer3.png" alt="">
                 </div>
                 <div>
+                    <img class="team-image" src="images/trainer4.png" alt="">
                     <h3 class="text">Dianne Russell</h3>
                     <p class="text-light">Trainer</p>
-                    <img class="team-image" src="images/trainer4.png" alt="">
                 </div>
                 <div>
+                    <img class="team-image" src="images/trainer5.png" alt="">
                     <h3 class="text">Cody Fisher</h3>
                     <p class="text-light">Trainer</p>
-                    <img class="team-image" src="images/trainer5.png" alt="">
                 </div>
                 <div>
+                    <img class="team-image" src="images/trainer6.png" alt="">
                     <h3 class="text">Theresa Webb</h3>
                     <p class="text-light">Trainer</p>
-                    <img class="team-image" src="images/trainer6.png" alt="">
                 </div>
             </div>
         </section>
@@ -116,9 +221,8 @@
                 </div>
             </div>
         </div>
-        <hr class="footer">
+        <hr class="footer hr">
         <p class="copyright text-light footer">All rights reserved @Fitness 2024</p>
     </footer>
-    
 </body>
 </html>
