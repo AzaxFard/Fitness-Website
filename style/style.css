@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+.inter-font {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.dancing-script-font {
+    font-family: "Dancing Script", cursive;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* shared styles */
+.display-flex{
+    display: flex;
+}
+.display-grid{
+    display: grid;
+}
+.text{
+    color: rgba(255, 255, 255);
+}
+.text-light{
+    color: rgba(255, 255, 255, 0.5);
+}
+.bg{
+    background-color: rgba(17, 17, 17, 1);
+}
+.bg2{
+    background-color: rgba(230, 83, 60, 1);
+}
+.bg3{
+    background-color: black;
+}
+.btn-primary{
+    background-color: rgba(230, 83, 60, 1);
+    color: white;
+    padding: 16px 47px;
+    font-size: 1.20rem;
+    font-weight: 500;
+    border-radius: 42px;
+    border: none;
+}
+.btn-secondary{
+    background-color: rgba(17, 17, 17, 1);
+    color: white;
+    padding: 16px 47px;
+    font-size: 1.20rem;
+    font-weight: 500;
+    border-radius: 42px;
+    border-color: white;
+}
+main{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+main > section{
+    margin-top: 130px;
+}
+.section-title{
+    font-size: 3rem;
+    font-weight: 800;
+}
+
+
+
+/* navbar styles */
+.navbar{
+    justify-content: space-between;
+    align-items: center;
+}
+.brand{
+    color: rgba(230, 83, 60, 1);
+    font-style: italic;
+    font-weight: 800;
+    font-size: 2.25rem;
+}
+.nav-links{
+    border-radius: 42px;
+    border-color: rgba(255, 255, 255, 0.1);
+    border-style: solid;
+    border-width: 1px ;
+}
+.nav-item{
+    list-style: none;
+    margin-right: 30px;
+    padding: 8px 20px;
+    border-radius: 42px;
+}
+.nav-link{
+    text-decoration: none;
+    font-weight: 500;
+}
+.navbar, .banner{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+
+/* banner styles */
+.banner{
+    justify-content: space-between;
+}
+.banner-content{
+    max-width: 600px;
+    margin-bottom: 50px;
+}
+.banner-title{
+    font-weight: 800;
+    font-size: 5rem;
+}
+
+
+/* habits section styles */
+.habits{
+    flex-direction: column;
+}
+.habit-content{
+    text-align: center;
+}
+.habit-cards{
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+    margin-top: 50px;
+    text-align: center;
+}
+.habit-image{
+    border-radius: 100px;
+    border-color: rgba(255, 255, 255, 0.1);
+    border-style: solid;
+}
